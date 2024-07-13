@@ -1,0 +1,40 @@
+@media (prefers-color-scheme: dark) {
+  body.dark-theme {
+    background-color: #000;
+  }
+  
+  .dark-theme .header__user-info,
+  .dark-theme .header__lvl-text,
+  .dark-theme .main-value__count,
+  .dark-theme .main__progress-value,
+  .dark-theme .controls__link-name {
+    color: #fff;
+  }
+  
+  .dark-theme .header__lvl-block,
+  .dark-theme .main {
+    background-color: #101010;
+  }
+  
+  .dark-theme .controls {
+    background-color: #101010;
+    border-color: #1B1B1B;
+  }
+  
+  .dark-theme .controls__link-icon {
+    fill: #fff;
+  }
+  
+  .dark-theme .controls__link.active .controls__link-icon {
+    fill: #007AFE;
+  }
+ 
+  .dark-theme .controls__link.active .controls__link-name {
+    color: #fff;
+  }
+ 
+  .dark-theme .controls__link.active {
+    background-color: #000;
+  }
+ }
+ 
