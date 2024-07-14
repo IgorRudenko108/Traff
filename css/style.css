@@ -235,7 +235,7 @@ body {
     }
   }
 
-  @media (min-width: 360px) {
+  @media (min-width: 390px) {
     .main {
       background-color: #E3EBFE;
       border-radius: 40px 40px 0 0;
@@ -258,7 +258,7 @@ body {
     }
   }
 
-  @media (min-width: 360px) {
+  @media (min-width: 390px) {
     .main__inner {
       display: flex;
       flex-direction: column;
@@ -291,7 +291,7 @@ body {
     }
   }
 
-  @media (min-width: 360px) {
+  @media (min-width: 390px) {
     .main-value__count {
       line-height: 120%;
       font-weight: 700;
@@ -317,7 +317,7 @@ body {
     }
   }
 
-  @media (min-width: 360px) {
+  @media (min-width: 390px) {
     .main__coin-box {
       position: relative;
       overflow: hidden;
@@ -350,7 +350,7 @@ body {
     }
   }
 
-  @media (min-width: 360px) {
+  @media (min-width: 390px) {
     .main__progress-block {
       display: flex;
       align-items: center;
@@ -411,7 +411,7 @@ body {
     }
   }
 
-  @media (min-width: 360px) {
+  @media (min-width: 390px) {
     .controls {
       display: flex;
       align-items: center;
