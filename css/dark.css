@@ -8,12 +8,15 @@
   .dark-theme .header__lvl-text,
   .dark-theme .main-value__count,
   .dark-theme .main__progress-value,
-  .dark-theme .controls__link-name {
+  .dark-theme .controls__link-name,
+  .dark-theme .earn-block__text,
+  .dark-theme .earn-block__link {
     color: #fff;
   }
   
   .dark-theme .header__lvl-block,
-  .dark-theme .main {
+  .dark-theme .main,
+  .dark-theme .earn-block__link {
     background-color: #101010;
   }
   
@@ -34,8 +37,9 @@
     color: #fff;
   }
  
-  .dark-theme .controls__link.active {
+  .dark-theme .controls__link.active,
+  .dark-theme .earn-block {
     background-color: #000;
   }
- }
+}
  

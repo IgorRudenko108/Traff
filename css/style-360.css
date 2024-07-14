@@ -123,6 +123,12 @@
     justify-content: center;
     gap: 12px;
   }
+
+  .main-value img {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+  }
   
   .main-value__count {
     line-height: 120%;
@@ -326,13 +332,14 @@
     transition: background .2s ease-in-out;
   }
   
-  .btn-text--2 {
-    display: none;
-  }
-  
   .earn-block__btn-icon {
     display: none;
   }
+
+  .earn-block__btn.copied .earn-block__btn-icon {
+    display: block;
+  } 
+  
   
   .btn-icon {
     width: 20px;
