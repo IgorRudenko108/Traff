@@ -10,7 +10,12 @@
   .dark-theme .main__progress-value,
   .dark-theme .controls__link-name,
   .dark-theme .earn-block__text,
-  .dark-theme .earn-block__link {
+  .dark-theme .earn-block__link,
+  .dark-theme .quests__title,
+  .dark-theme .quests-block__text,
+  .dark-theme .quests-list__title,
+  .dark-theme .quests-list__user-name,
+  .dark-theme .quests-list__current-value {
     color: #fff;
   }
   
@@ -38,7 +43,8 @@
   }
  
   .dark-theme .controls__link.active,
-  .dark-theme .earn-block {
+  .dark-theme .earn-block,
+  .dark-theme .quests-list__item {
     background-color: #000;
   }
 }
