@@ -11,17 +11,26 @@
   .dark-theme .controls__link-name,
   .dark-theme .earn-block__text,
   .dark-theme .earn-block__link,
-  .dark-theme .quests__title,
-  .dark-theme .quests-block__text,
-  .dark-theme .quests-list__title,
-  .dark-theme .quests-list__user-name,
-  .dark-theme .quests-list__current-value {
+  .dark-theme .friends__title,
+  .dark-theme .friends-block__text,
+  .dark-theme .friends-list__title,
+  .dark-theme .friends-list__user-name,
+  .dark-theme .friends-list__current-value,
+  .dark-theme .quests-block__title,
+  .dark-theme .quests-block__info-title,
+  .dark-theme .quests-block__info-value,
+  .dark-theme .quests-category__title,
+  .dark-theme .quests-category__text,
+  .dark-theme .quests-category__item-title,
+  .dark-theme .quests-category__item-value,
+  .dark-theme .quests-category__bottom-text {
     color: #fff;
   }
   
   .dark-theme .header__lvl-block,
   .dark-theme .main,
-  .dark-theme .earn-block__link {
+  .dark-theme .earn-block__link,
+  .dark-theme .quests-category__item {
     background-color: #101010;
   }
   
@@ -44,8 +53,14 @@
  
   .dark-theme .controls__link.active,
   .dark-theme .earn-block,
-  .dark-theme .quests-list__item {
+  .dark-theme .friends-list__item,
+  .dark-theme .quests-block__list-item,
+  .dark-theme .quests-category__block {
     background-color: #000;
+  }
+
+  .quests-category__item.active {
+    background-color: #007AFE;
   }
 }
  

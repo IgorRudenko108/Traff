@@ -121,6 +121,7 @@ body {
 
 .container {
   max-width: 991.98px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 16px;
   height: 100%;
@@ -184,7 +185,7 @@ body {
   line-height: 120%;
   font-weight: 400;
   font-size: 14px;
-  color: #fff;
+  color: #000;
 }
 
 .header__lvl-block {
@@ -237,7 +238,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0 105px;
+    padding: 16px 0 105px;
     height: auto;
     min-height: calc(100dvh - 76px);
 
@@ -248,7 +249,7 @@ body {
   .main {
     background-color: #E3EBFE;
     border-radius: 40px 40px 0 0;
-    padding: 32px 0 105px;
+    padding: 20px 0 105px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -265,7 +266,6 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    gap: 12px;
     flex: 1 1 auto;
   }
 }
@@ -277,7 +277,6 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    gap: 15px;
     flex: 1 1 auto;
   }
 }
@@ -508,21 +507,42 @@ body {
   padding: 0 25px;
 }
 
-.earn-block__link {
-  color: #000;
-  text-align: center;
-  font-weight: 700;
-  font-size: 16px;
-  padding: 14px 16px;
-  border-radius: 16px;
-  margin-bottom: 16px;
-  background-color: #E3EBFE;
-  width: 100%;
-  max-width: 310px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+@media (min-width: 360px){
+  .earn-block__link {
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 14px 16px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    background-color: #E3EBFE;
+    width: 100%;
+    max-width: 295px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
+
+@media (min-width: 390px){
+  .earn-block__link {
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 14px 16px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    background-color: #E3EBFE;
+    width: 100%;
+    max-width: 310px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
 
 .btn {
   height: 48px;
@@ -559,8 +579,8 @@ body {
 /*-- /earn-page ----------------------------------------------------------------------------------------- */
 
 
-/*-- quests-page ----------------------------------------------------------------------------------------- */
-.quests__title {
+/*-- friends-page ----------------------------------------------------------------------------------------- */
+.friends__title {
   line-height: 120%;
   font-weight: 700;
   font-size: 24px;
@@ -569,7 +589,7 @@ body {
   margin-bottom: 12px;
 }
 
-.quests__offer {
+.friends__offer {
   line-height: 120%;
   font-weight: 700;
   font-size: 16px;
@@ -582,7 +602,7 @@ body {
   color: #007AFE;
 }
 
-.quests-block__text {
+.friends-block__text {
   line-height: 120%;
   font-weight: 400;
   font-size: 14px;
@@ -592,18 +612,18 @@ body {
   max-width: 280px;
 }
 
-.quests-block {
+.friends-block {
   margin: 0 0 24px;
 }
 /* ------------------------------------------------------------ */
 
-.quests-list {
+.friends-list {
   margin-bottom: auto;
   width: 100%;
   margin-bottom: 20px;
 }
 
-.quests-list__title {
+.friends-list__title {
   line-height: 120%;
   font-weight: 700;
   font-size: 16px;
@@ -613,14 +633,14 @@ body {
 }
 
 
-.quests-list__body {
+.friends-list__body {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.quests-list__label {
+.friends-list__label {
   position: absolute;
   top: 5px;
   width: 100%;
@@ -633,7 +653,7 @@ body {
   z-index: 1;
 }
 
-.quests-list__item {
+.friends-list__item {
   background-color: #fff;
   border-radius: 24px;
   padding: 12px;
@@ -644,86 +664,256 @@ body {
   z-index: 2;
 }
 
-.quests-list__avatar-wrapper {
+.friends-list__avatar-wrapper {
   width: 38px;
   height: 38px;
   flex: 0 0 38px;
   margin: 0;
 }
 
-.quests-list__user-info {
+.friends-list__user-info {
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
 
-.quests-list__user-name {
+.friends-list__user-name {
   line-height: 120%;
   font-weight: 700;
   font-size: 16px;
   color: #000;
 }
 
-.quests-list__user-value {
+.friends-list__user-value {
   line-height: 120%;
   font-weight: 700;
   font-size: 14px;
   color: #007AFE;
 }
 
-.quests-list__current {
+.friends-list__current {
   display: flex;
   align-items: center;
   gap: 4px;
   margin-left: auto;
 }
 
-.quests-list__current-value {
+.friends-list__current-value {
   line-height: 120%;
   font-weight: 700;
   font-size: 14px;
   color: #000;
 } 
 
-.quests-list__current-icon {
+.friends-list__current-icon {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+}
+/*-- /friends-page ----------------------------------------------------------------------------------------- */
+
+
+
+/*-- quests-page ----------------------------------------------------------------------------------------- */
+.quests__wrapper {
+  width: 100%;
+}
+
+.quests-block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.quests-block__title {
+  line-height: 120%;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #000;
+}
+
+.quests-block__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.quests-block__list-item {
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.quests-block__item-check {
+    width: 20px;
+    height: 15px;
+    display: none;
+}
+
+.quests-block__list-item.checked .quests-block__item-check {
+  display: block;
+}
+
+.quests-block__item-img {
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+}
+
+.quests-block__item-info {
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.quests-block__info-title {
+  line-height: 120%;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+
+.quests-block__info-bottom {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.quests-block__info-icon {
   width: 16px;
   height: 16px;
   flex: 0 0 16px;
 }
 
-
-
-
-
-
-
+.quests-block__info-value {
+  line-height: 120%;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
 /*-- /quests-page ----------------------------------------------------------------------------------------- */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.text {
-  color: #fff;
-  padding: 0 10px;
-  margin: 0 auto;
+/*-- quests-category__page ----------------------------------------------------------------------------------------- */
+@media (min-width: 360px){
+  .quests-category__block {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 24px;
+    width: 100%;
+  }
 }
+
+@media (min-width: 390px){
+  .quests-category__block {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 24px;
+    width: 100%;
+  }
+}
+
+.quests-category__title {
+  line-height: 120%;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.quests-category__text {
+  line-height: 120%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 16px;
+  max-width: 280px;
+}
+
+.quests-category__body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.quests-category__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #E3EBFE;
+  border-radius: 16px;
+  text-align: center;
+  padding: 12px;
+
+}
+
+.quests-category__item.active {
+  background-color: #007AFE;
+}
+
+.quests-category__item.active .quests-category__item-title,
+.quests-category__item.active .quests-category__item-value {
+  color: #fff;
+}
+
+.quests-category__item.active .quests-category__item-icon {
+  fill: #fff;
+}
+
+.quests-category__item-title {
+  line-height: 120%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.quests-category__item-icon {
+  fill: #007AFE;
+} 
+
+.quests-category__item-value {
+  line-height: 120%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.quests-category__bottom-text {
+  line-height: 120%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+
+/*-- /quests-category__page ----------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
