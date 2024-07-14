@@ -409,7 +409,8 @@ body {
     right: 10px;
     width: calc(100% - 20px);
     z-index: 99;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     gap: 14px;
     justify-content: space-between;
@@ -425,7 +426,7 @@ body {
 
 @media (min-width: 390px) {
   .controls {
-    display: flex;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     gap: 14px;
     justify-content: space-between;
@@ -453,7 +454,7 @@ body {
   background-color: transparent;
   border-radius: 16px;
   height: 62px;
-  width: 75px;
+  width: 100%;
 }
 
 .controls__link.active {
