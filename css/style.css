@@ -106,7 +106,7 @@ body {
 
 
 
-/* @media (min-width: 390px) { */
+@media (min-width: 390px) {
     
   /* -- main-page ----------------------------------------------------------------------------------------- */
   body {
@@ -154,20 +154,18 @@ body {
     bottom: 0;
   }
 
-  .header__user-info {
-    color: #fff;
-  }
-
   .header__user-name {
     line-height: 120%;
     font-weight: 700;
     font-size: 18px;
+    color: #fff;
   }
 
   .header__user-status {
     line-height: 120%;
     font-weight: 400;
     font-size: 14px;
+    color: #fff;
   }
 
   .header__lvl-block {
@@ -450,7 +448,8 @@ body {
   /*-- /earn-page ----------------------------------------------------------------------------------------- */
 
 
-/* } */
+
+}
 
 
 

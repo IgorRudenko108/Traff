@@ -1,352 +1,52 @@
 @media (min-width: 360px) {
-  /* -- main-page ----------------------------------------------------------------------------------------- */
-  .header {
-    padding-top: 12px;
-    margin-bottom: 16px;
-  }
-  
-  .container {
-    max-width: 991.98px;
-    margin: 0 auto;
-    padding: 0 16px;
-    height: 100%;
-  }
-  
-  .header__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 4px;
-  }
-  
-  .header__avatar-wrapper {
-    width: 48px;
-    height: 48px;
-    flex: 0 0 48px;
-    overflow: hidden;
-    border-radius: 50%;
-    margin-right: 12px;
-    position: relative;
-  }
-  
-  .header__avatar-img {
-    max-width: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-  
   .header__user-name {
     line-height: 120%;
     font-weight: 700;
     font-size: 16px;
     color: #000;
   }
-  
-  .header__user-status {
-    line-height: 120%;
-    font-weight: 400;
-    font-size: 14px;
-    color: #000;
-  }
-  
-  .header__lvl-block {
-    margin-left: auto;
-    background-color: #E3EBFE;
-    border-radius: 12px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 76px;
-    padding: 0 7px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-  
-  .header__lvl-top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .header__lvl-icon {
-    width: 14px;
-    height: 14px;
-    flex: 0 0 14px;
-    margin-right: 8px;
-  }
-  
-  .header__lvl-text {
-    line-height: 120%;
-    font-weight: 400;
-    font-size: 12px;
-    color: #000;
-  }
-  
-  .header__lvl-value {
-    color: #007AFE;
-    line-height: 120%;
-    font-weight: 700;
-    font-size: 14px;
-  }
-  
-  /* -------------------------------------------------------------------------------- */
-  
+
   .main {
-    background-color: #E3EBFE;
-    border-radius: 40px 40px 0 0;
     padding: 20px 0 105px;
-    /* height: calc(100dvh - 60px); */
-    height: calc(100dvh - 76px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  	/* height: calc(100dvh - 60px); */
   }
-  
+
   .main__inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    gap: 12px;
-  }
-  
-  .main-value {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 12px;
   }
 
-  .main-value img {
-    width: 40px;
-    height: 40px;
-    flex: 0 0 40px;
-  }
-  
   .main-value__count {
-    line-height: 120%;
-    font-weight: 700;
     font-size: 42px;
   }
-  
-  .main-value__count img {
-    width: 40px;
-    height: 40px;
-    flex: 0 0 40px;
-  }
-  
-  /* ----------------------------------------------------------------------------- */
-  
+
   .main__coin-box {
-    position: relative;
-    overflow: hidden;
     width: 240px;
     height: 240px;
-    margin: auto;
-    display: flex;
+
   }
-  
-  .main__coin-img {
-    max-width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  /* ----------------------------------------------------------------- */
-  
+
   .main__progress-block {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    width: 100%;
     margin-bottom: 15px;
+
   }
-  
-  .main__progress-icon {
-    width: 24px;
-    height: 24px;
-    flex: 0 0 24px;
-  }
-  
-  .main__progress-value {
-    line-height: 120%;
-    font-weight: 700;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .main__progress-box {
-    height: 16px;
-    border-radius: 24px;
-    width: 100%;
-    position: relative;
-    background-color: #fff;
-  }
-  
-  .main__progress-line {
-    position: absolute;
-    height: 16px;
-    border-radius: 24px;
-    left: 0;
-    background-color: #007AFE;
-  }
-  
-  /* -------------------------------------------------------------------------------- */
-  
-  .controls {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    justify-content: space-between;
-    padding: 8px;
-    border-radius: 24px;
-    border: 1px solid #DBDBDB;
-    position: fixed;
+
+  .controls  {
     bottom: 10px;
     left: 10px;
     right: 10px;
     width: calc(100% - 20px);
-    max-width: 992px;
-    margin: 0 auto;
-  }
-  
-  .controls__link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    background-color: transparent;
-    border-radius: 16px;
-    height: 62px;
-    width: 75px;
-  }
-  
-  .controls__link.active {
-    background-color: #fff;
-  }
-  
-  .controls__link.active .controls__link-icon {
-    fill: #007AFE;
-  }
-  
-  .controls__link-icon {
-    fill: #000;
-  
-  }
-  
-  .controls__link-name {
-    line-height: 120%;
-    font-weight: 400;
-    font-size: 12px;
-    color: #000;
-  }
-  /* -- /main-page ----------------------------------------------------------------------------------------- */
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* -- earn-page ----------------------------------------------------------------------------------------- */
-  .earn-block {
-    padding: 24px;
-    border-radius: 24px;
-    background-color: #000;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    align-items: center;
-    margin: auto;
-  }
-  
-  .earn-block__img {
-    width: 48px;
-    height: 48px;
-    flex: 0 0 48px;
-    display: block;
-    margin: 0 auto 24px; 
-  }
-  
-  .earn-block__text {
-    color: #000;
-    text-align: center;
-    font-weight: 700;
-    font-size: 16px;
-    margin-bottom: 24px;
-    padding: 0 25px;
   }
 
-  .earn-block__link {
-    color: #000;
-    text-align: center;
-    font-weight: 700;
-    font-size: 16px;
-    padding: 14px 16px;
-    border-radius: 16px;
-    margin-bottom: 16px;
-    background-color: #E3EBFE;
-    width: 100%;
-  }
-  
-  .btn {
-    height: 48px;
-    width: 100%;
-    border-radius: 16px;
-    background-color: #007AFE;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    gap: 10px;
-    transition: background .2s ease-in-out;
-  }
 
-  .btn:hover {
-    background-color: #1159a5;
-    transition: background .2s ease-in-out;
-  }
-  
-  .earn-block__btn-icon {
-    display: none;
-  }
 
-  .earn-block__btn.copied .earn-block__btn-icon {
-    display: block;
-  } 
-  
-  
-  .btn-icon {
-    width: 20px;
-    height: 14px;
-  }
 
-  /* -- /earn-page ----------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
 
 }
  
