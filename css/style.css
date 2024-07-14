@@ -835,7 +835,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   color: #000;
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
   max-width: 280px;
 }
 
