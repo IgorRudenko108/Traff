@@ -1,139 +1,24 @@
-@font-face {
-	font-family: Geologica;
-	font-display: swap;
-	src: url("../fonts/Geologica-Regular.woff2") format("woff2"), url("../fonts/Geologica-Regular.ttf") format("woff");
-	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: Geologica;
-	font-display: swap;
-	src: url("../fonts/Geologica-Bold.woff2") format("woff2"), url("../fonts/Geologica-Bold.ttf") format("woff");
-	font-weight: 700;
-	font-style: normal;
-}
-
-/*Обнуление*/
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-:focus,
-:active {
-  outline: none;
-}
-a:focus,
-a:active {
-  outline: none;
-}
-nav,
-footer,
-header,
-aside {
-  display: block;
-}
-html,
-body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-input,
-button,
-textarea {
-  font-family: inherit;
-}
-input::-ms-clear {
-  display: none;
-}
-button {
-  cursor: pointer;
-}
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-a,
-a:visited {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
-ul li {
-  list-style: none;
-}
-img {
-  vertical-align: top;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-/*--------------------*/
-body {
-  font-family: 'Geologica';
-  font-size: 16px;
-  background-color: #fff;
-  position: relative;
-  height: 100%;
-}
-
-
-
-
-
-
-
-
-
-@media (min-width: 390px) {
-    
+@media (min-width: 360px) {
   /* -- main-page ----------------------------------------------------------------------------------------- */
-  body {
-    font-family: 'Geologica';
-    font-size: 16px;
-    background-color: #fff;
-  }
-
   .header {
     padding-top: 12px;
     margin-bottom: 16px;
   }
-
+  
   .container {
     max-width: 991.98px;
     margin: 0 auto;
     padding: 0 16px;
     height: 100%;
   }
-
+  
   .header__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 4px;
   }
-
+  
   .header__avatar-wrapper {
     width: 48px;
     height: 48px;
@@ -143,7 +28,7 @@ body {
     margin-right: 12px;
     position: relative;
   }
-
+  
   .header__avatar-img {
     max-width: 100%;
     object-fit: cover;
@@ -153,23 +38,21 @@ body {
     right: 0;
     bottom: 0;
   }
-
-  .header__user-info {
-    color: #fff;
-  }
-
+  
   .header__user-name {
     line-height: 120%;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
+    color: #000;
   }
-
+  
   .header__user-status {
     line-height: 120%;
     font-weight: 400;
     font-size: 14px;
+    color: #000;
   }
-
+  
   .header__lvl-block {
     margin-left: auto;
     background-color: #E3EBFE;
@@ -184,85 +67,86 @@ body {
     flex-direction: column;
     gap: 6px;
   }
-
+  
   .header__lvl-top {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
+  
   .header__lvl-icon {
     width: 14px;
     height: 14px;
     flex: 0 0 14px;
     margin-right: 8px;
   }
-
+  
   .header__lvl-text {
     line-height: 120%;
     font-weight: 400;
     font-size: 12px;
     color: #000;
   }
-
+  
   .header__lvl-value {
     color: #007AFE;
     line-height: 120%;
     font-weight: 700;
     font-size: 14px;
   }
-
+  
   /* -------------------------------------------------------------------------------- */
-
+  
   .main {
     background-color: #E3EBFE;
     border-radius: 40px 40px 0 0;
-    padding: 32px 0 105px;
+    padding: 20px 0 105px;
+    /* height: calc(100dvh - 60px); */
     height: calc(100dvh - 76px);
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
+  
   .main__inner {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    gap: 15px;
+    gap: 12px;
   }
-
+  
   .main-value {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 12px;
   }
-
+  
   .main-value__count {
     line-height: 120%;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 42px;
   }
-
+  
   .main-value__count img {
     width: 40px;
     height: 40px;
     flex: 0 0 40px;
   }
-
+  
   /* ----------------------------------------------------------------------------- */
-
+  
   .main__coin-box {
     position: relative;
     overflow: hidden;
-    width: 310px;
-    height: 310px;
+    width: 240px;
+    height: 240px;
     margin: auto;
     display: flex;
   }
-
+  
   .main__coin-img {
     max-width: 100%;
     position: absolute;
@@ -275,21 +159,21 @@ body {
     object-fit: cover;
   }
   /* ----------------------------------------------------------------- */
-
+  
   .main__progress-block {
     display: flex;
     align-items: center;
     gap: 15px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
-
+  
   .main__progress-icon {
     width: 24px;
     height: 24px;
     flex: 0 0 24px;
   }
-
+  
   .main__progress-value {
     line-height: 120%;
     font-weight: 700;
@@ -297,7 +181,7 @@ body {
     display: flex;
     align-items: center;
   }
-
+  
   .main__progress-box {
     height: 16px;
     border-radius: 24px;
@@ -305,7 +189,7 @@ body {
     position: relative;
     background-color: #fff;
   }
-
+  
   .main__progress-line {
     position: absolute;
     height: 16px;
@@ -313,9 +197,9 @@ body {
     left: 0;
     background-color: #007AFE;
   }
-
+  
   /* -------------------------------------------------------------------------------- */
-
+  
   .controls {
     display: flex;
     align-items: center;
@@ -325,14 +209,14 @@ body {
     border-radius: 24px;
     border: 1px solid #DBDBDB;
     position: fixed;
-    bottom: 25px;
-    left: 16px;
-    right: 16px;
-    width: calc(100% - 32px);
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    width: calc(100% - 20px);
     max-width: 992px;
     margin: 0 auto;
   }
-
+  
   .controls__link {
     display: flex;
     flex-direction: column;
@@ -344,20 +228,20 @@ body {
     height: 62px;
     width: 75px;
   }
-
+  
   .controls__link.active {
     background-color: #fff;
   }
-
+  
   .controls__link.active .controls__link-icon {
     fill: #007AFE;
   }
-
+  
   .controls__link-icon {
     fill: #000;
-
+  
   }
-
+  
   .controls__link-name {
     line-height: 120%;
     font-weight: 400;
@@ -365,8 +249,7 @@ body {
     color: #000;
   }
   /* -- /main-page ----------------------------------------------------------------------------------------- */
-
-
+  
 
 
 
@@ -384,7 +267,7 @@ body {
 
 
   /* -- earn-page ----------------------------------------------------------------------------------------- */
-  /* .earn-block {
+  .earn-block {
     padding: 24px;
     border-radius: 24px;
     background-color: #000;
@@ -456,47 +339,12 @@ body {
     height: 14px;
   }
 
-  /-- /earn-page ----------------------------------------------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  /* -- /earn-page ----------------------------------------------------------------------------------------- */
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.text {
-  color: #fff;
-  padding: 0 10px;
-  margin: 0 auto;
-}
+ 
+ 
+ 
+ 
+ 
+ 

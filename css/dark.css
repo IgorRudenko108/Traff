@@ -3,7 +3,8 @@
     background-color: #000;
   }
   
-  .dark-theme .header__user-info,
+  .dark-theme .header__user-name,
+  .dark-theme .header__user-status,
   .dark-theme .header__lvl-text,
   .dark-theme .main-value__count,
   .dark-theme .main__progress-value,
