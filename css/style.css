@@ -928,10 +928,10 @@ body {
   position: absolute;
   font-weight: 700;
   font-size: 35px;
-  color: rgb(235, 170, 32);
-  transition: all 1s ease-in-out;
+  color: rgb(255, 216, 44);
+  transition: all 1s linear;
   will-change: transform;
-  animation: tap .5s ease-in-out;
+  animation: tap .6s linear;
 }
 
 
@@ -942,7 +942,7 @@ body {
   }
 
   100% {
-    transform: translateY(-150%);
+    transform: translateY(-400%);
     opacity: 0;
   }
 }
@@ -950,14 +950,22 @@ body {
 .main__coin-img {
   will-change: transform;
   transition: all .2s ease-in-out;
-  transform: scale(1);
 }
 
 .main__coin-img.active {
   transition: all .2s ease-in-out;
-  transform: scale(1.02);
+  animation: zoom .2s ease-in-out;
 }
 
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
 
 
 

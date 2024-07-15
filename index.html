@@ -125,10 +125,14 @@
 
 				setTimeout(function() {
 					bonus.remove();
-				}, 1000);
+				}, 2000);
 
 				let coin = document.querySelector('.main__coin-img');
-				coin.classList.toggle('active');
+				coin.classList.add('active');
+
+				setTimeout(function() {
+					coin.classList.remove('active');
+				}, 100);
 
 			})
 
