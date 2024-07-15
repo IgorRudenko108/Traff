@@ -300,6 +300,10 @@ body {
     font-size: 42px;
     line-height: 120%;
     font-weight: 700;
+
+    max-width: 320px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
@@ -308,6 +312,18 @@ body {
     line-height: 120%;
     font-weight: 700;
     font-size: 48px;
+
+    max-width: 320px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (min-width: 576px){
+  .main-value__count {
+    max-width: 500px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
@@ -869,6 +885,7 @@ body {
 .quests-category__item.active .quests-category__item-title,
 .quests-category__item.active .quests-category__item-value {
   color: #fff;
+  text-decoration: none;
 }
 
 .quests-category__item.active .quests-category__item-icon {
@@ -891,6 +908,7 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 14px;
+  text-decoration: none;
 }
 
 .quests-category__bottom-text {
@@ -902,11 +920,18 @@ body {
 }
 
 /*-- /quests-category__page ----------------------------------------------------------------------------------------- */
+.main__coin-box {
+  position: relative;
+}
 
-
-
-
-
+.spark {
+  position: absolute;
+  transform: translate(-20px, -20px);
+  
+  font-weight: 700;
+  font-size: 30px;
+  color: goldenrod;
+}
 
 
 

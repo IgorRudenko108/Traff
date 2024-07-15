@@ -105,5 +105,30 @@
 	
 		</div>
 
+		<script>
+
+			let body = document.querySelector('.main__inner');
+			body.addEventListener('click', function(event) {
+				let spark = document.createElement('div');
+				spark.classList.add('spark');
+				body.appendChild(spark);
+
+				spark.style.top = (event.clientY - body.offsetTop) + 'px';
+				spark.style.left = (event.clientX - body.offsetLeft) + 'px';
+
+				for(var i = 0; i <=0; i++) {
+					let span = document.createElement('span');
+					span.innerText = "+15";
+					span.style.transform = 'rotate('+(i * 45) +'deg)';
+					spark.appendChild(span); 
+				}
+
+				setTimeout(function() {
+					spark.remove();
+				}, 1000);
+			})
+
+		</script>
+
 	</body>
 </html>
