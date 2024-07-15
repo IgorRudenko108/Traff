@@ -109,23 +109,27 @@
 
 			let body = document.querySelector('.main__inner');
 			body.addEventListener('click', function(event) {
-				let spark = document.createElement('div');
-				spark.classList.add('spark');
-				body.appendChild(spark);
+				let bonus = document.createElement('div');
+				bonus.classList.add('bonus');
+				body.appendChild(bonus);
 
-				spark.style.top = (event.clientY - body.offsetTop) + 'px';
-				spark.style.left = (event.clientX - body.offsetLeft) + 'px';
+				bonus.style.top = (event.clientY - body.offsetTop) + 'px';
+				bonus.style.left = (event.clientX - body.offsetLeft) + 'px';
+				bonus.style.opacity = 0;
 
 				for(var i = 0; i <=0; i++) {
 					let span = document.createElement('span');
 					span.innerText = "+15";
-					span.style.transform = 'rotate('+(i * 45) +'deg)';
-					spark.appendChild(span); 
+					bonus.appendChild(span); 
 				}
 
 				setTimeout(function() {
-					spark.remove();
+					bonus.remove();
 				}, 1000);
+
+				let coin = document.querySelector('.main__coin-img');
+				coin.classList.toggle('active');
+
 			})
 
 		</script>
